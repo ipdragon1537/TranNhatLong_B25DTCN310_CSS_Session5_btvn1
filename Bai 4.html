@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "utf-8">
+        <style>
+            body {
+                font-family:Ariel,sans-serif;
+                line-height:1.5;
+                padding:20px;
+            }
+            h1 {
+              font-size:28px;
+              font-weight:500;
+            }
+            .description {
+                font-size: 16px;
+                margin-bottom: 15px;
+            }
+            code {
+               color:#e83e8c;
+               background-color:#f8f9fa;
+               padding:2px 4px;
+               border-radius:4px;
+            }
+            .preview-box {
+               border: 2px solid green;
+               text-align:center;
+               padding:20px;
+               margin-bottom:30px;
+               font-size: 16px;
+            }
+            .example-selection {
+                background-color:#e7e9eb;
+                padding:20px;
+                border-radius:8px;
+            }
+            .example-selection h2 {
+                margin-top:0;
+                font-weight:400;
+            }
+            .code-block {
+              background-color:white;
+              padding:15px;
+              border-left:4px solid #04aa6d;
+              font-family:Consolas, monospace;
+              margin:15px 0;
+            }
+            .selectors {color:brown; }
+            .property {color:red; }
+            .value {color:blue; }
+            .btn-try {
+               background-color: #04aa6d;
+               color:white;
+               border:none;
+               padding:10px 20px;
+               font-size:16px;
+               border-radius:5px;
+               cursor:pointer;
+            }
+            .btn-try:hover {
+                background-color:#059862;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Center Align Text</h1>
+        <p class = "description">To just center the text inside an element, use <code>text-align: center;</code></p>
+        <div class = "preview-box">
+            This test is centered
+        </div>
+        <div class = "example-selection">
+            <h2>Example</h2>
+            <div class = "code-block">
+                <span class = "selectors">.center</span>{<br>
+                    &nbsp;&nbsp;<span class = "property">text-align</span>:<span class = "value">center</span>;<br>
+                    &nbsp;&nbsp;<span class = "property">border</span>:<span class = "value">3px solid green</span>;<br>
+                }
+            </div>
+            <button class = "btn-try">Try it Yourself</button>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Danh sách bài viết CSS</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            padding: 50px;
+        }
+
+        /* Container chính màu xanh nhạt bao quanh */
+        .article-container {
+            background-color: #eef6f9; /* Màu nền HSL tương đương */
+            padding: 25px;
+            border-radius: 15px;
+            width: 600px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        /* Định dạng chung cho mỗi mục bài viết */
+        .article-item {
+            display: flex;
+            align-items: center;
+            background-color: #d6eaf8; /* Màu RGB tương đương xanh nhạt */
+            margin-bottom: 15px;
+            padding: 15px;
+            border-radius: 10px;
+            text-decoration: none;
+            color: #2e86c1;
+            font-size: 18px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        /* Ảnh đại diện bên trái */
+        .article-item img {
+            width: 80px;
+            height: 80px;
+            border-radius: 8px;
+            margin-right: 20px;
+            object-fit: cover;
+        }
+
+        /* Adjacent Sibling Selector: Thêm khoảng cách giữa các bài viết liên tiếp */
+        .article-item + .article-item {
+            margin-top: 10px;
+        }
+
+        /* Attribute Selector: Target bài viết đang được làm nổi bật (Bài viết 2) */
+        .article-item[data-active="true"] {
+            background-color: #f7dc6f; /* Màu vàng nổi bật */
+            color: #943126;
+        }
+
+        /* Pseudo-class :hover cho toàn bộ card */
+        .article-item:hover {
+            transform: translateX(10px);
+            filter: brightness(0.95);
+            box-shadow: 2px 4px 10px rgba(0,0,0,0.1);
+        }
+
+        /* Pseudo-element ::after để thêm mũi tên ở cuối dòng */
+        .article-item::after {
+            content: " →";
+            margin-left: auto;
+            font-weight: bold;
+            opacity: 0.7;
+        }
+
+        /* Descendant Selector: Chỉnh style cho chữ trong bài viết */
+        .article-container a span {
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="article-container">
+        <a href="#" class="article-item">
+            <img src="https://via.placeholder.com/80" alt="CSS cơ bản">
+            Bài viết 1: Giới thiệu CSS cơ bản
+        </a>
+
+        <a href="#" class="article-item" data-active="true">
+            <img src="https://via.placeholder.com/80" alt="CSS nâng cao">
+            Bài viết 2: CSS Selector nâng cao
+        </a>
+
+        <a href="#" class="article-item">
+            <img src="https://via.placeholder.com/80" alt="Text & Font">
+            Bài viết 3: Text và Font trong CSS
+        </a>
+
+        <a href="#" class="article-item">
+            <img src="https://via.placeholder.com/80" alt="Pseudo elements">
+            Bài viết 4: Pseudo-class và Pseudo-element
+        </a>
+    </div>
+</body>
+</html>

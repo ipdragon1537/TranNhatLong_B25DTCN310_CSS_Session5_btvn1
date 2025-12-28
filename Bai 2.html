@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "utf-8">
+    <style>
+        .table-container {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    text-align: center;
+}
+
+        h2 {
+    color: #33475b;
+    margin-bottom: 15px;
+}
+        table {
+    width: 100%;
+    border-collapse: collapse; /* Để các đường viền không bị tách rời */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+        thead {
+    background-color: #007bff; /* Màu xanh giống trong hình */
+    color: white;
+}
+
+        th, td {
+    padding: 12px 15px;
+    border: 1px solid #e0e0e0;
+    text-align: center;
+}
+        tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+        tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+    </style>
+</head>
+<body>
+    <div class="table-container">
+    <h2>ADMIN USER TABLE</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>USERNAME</th>
+                <th>EMAIL</th>
+                <th>ROLE</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>admin01</td>
+                <td>admin01@example.com</td>
+                <td>Administrator</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>user123</td>
+                <td>user123@example.com</td>
+                <td>User</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>moderator56</td>
+                <td>moderator56@example.com</td>
+                <td>Moderator</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</body>
