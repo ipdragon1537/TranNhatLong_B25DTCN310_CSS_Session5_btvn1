@@ -1,0 +1,77 @@
+/* Tổng thể trang */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Phần Banner xanh phía trên */
+.intro-section {
+  background-color: #f0f4ff;
+  padding: 40px;
+  text-align: center;
+  width: 100%;
+  max-width: 800px;
+  border-radius: 4px;
+}
+
+.intro-section h1 {
+  color: #2b6cff;
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.intro-section p {
+  color: #2b6cff;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.intro-image {
+  max-width: 450px;
+  width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+}
+
+/* Phần Danh sách địa chỉ */
+.branch-section {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.branch-section h2 {
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.branch-list {
+  list-style: none;
+  padding: 0;
+}
+
+.branch-list li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+/* Định dạng từng dòng địa chỉ theo yêu cầu */
+.red-text {
+  color: red;
+}
+
+.italic-text {
+  font-style: italic;
+}
+
+.underline-text {
+  text-decoration: underline;
+}
+
+.bold-text {
+  font-weight: bold;
+}

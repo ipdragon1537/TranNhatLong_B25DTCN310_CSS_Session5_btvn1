@@ -1,82 +1,88 @@
-/* Reset cơ bản */
 * {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
-
-/* Card */
-.card {
-    width: 320px;
-    background: white;
-    margin: 50px auto;
-    padding: 30px;
-    text-align: center;
-    border: 15px solid #f2f2f2
+body {
+  background-color: #f0f9ff;
+  color: #0f172a;
+  line-height: 1.6;
 }
-
-/* Attribute selector cho ảnh */
-img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    margin-bottom: 15px;
+#clinic-header {
+  background-color: #0284c7;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
 }
-
-/* Text */
+#clinic-header h1 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 0.5rem;
+}
+.slogan {
+  font-style: italic;
+  opacity: 0.9;
+}
+section {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
 h2 {
-    margin: 10px 0;
+  color: #0369a1;
+  text-transform: capitalize;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
-
-.desc {
-    color: #555;
-    font-size: 14px;
+h2 + p {
+  color: #334155;
+  line-height: 1.4;
 }
-
-/* Skills */
-.skills {
-    list-style: none;
-    padding: 0;
+.philosophy em {
+  font-style: italic;
+  color: #0ea5e9;
+  font-weight: bold;
 }
-
-.skills li {
-    margin: 8px 0;
-    font-size: 16px;
-    font-weight: bold;
+.services ul {
+  list-style: none;
+  margin-top: 10px;
 }
-
-/* Màu từng skill */
-.skills .html {
-    color: red;
+.services li {
+  padding: 5px 0;
+  transition: color 0.3s ease;
+  cursor: pointer;
 }
-
-.skills .css {
-    color: blue;
+.services li::before {
+  content: "🦷 ";
 }
-
-.skills .js {
-    color: red;
+.services li:hover {
+  color: #0284c7;
 }
-
-/* Hover skill */
-.skills li:hover {
-    font-weight: bold;
-    color: #ff6600;
-    cursor: pointer;
+.warning {
+  color: #b91c1c;
+  font-style: italic;
+  margin-top: 10px;
 }
-
-/* Button */
-.follow-btn {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: black;
-    color: white;
-    border: none;
-    cursor: pointer;
+.contact a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #1d4ed8;
+  text-decoration: none;
 }
-
-/* Hover button */
-.follow-btn:hover {
-    background-color: #ff6600;
+a[target="_blank"] {
+  text-decoration: underline;
+  font-weight: bold;
+}
+.contact a:hover {
+  color: #0c4a6e;
+}
+.footer {
+  text-align: center;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 900;
+  background-color: #0284c7;
+  padding: 20px 0;
+  margin-top: 40px;
 }

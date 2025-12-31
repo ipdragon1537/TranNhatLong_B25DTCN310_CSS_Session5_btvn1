@@ -1,62 +1,20 @@
 <!DOCTYPE html>
-<html lang = "en">
-    <head>
-        <meta charset = "utf-8">
-        <style>
-            body {
-                font-family:'Segoe UI', Arial, sans-serif;
-                line-height:1.6;
-                color:#333;
-                max-width:800px;
-                margin:40px auto;
-                padding:20px;
-            }
-            h2 {
-                color:#0056b3;
-                border-bottom: 1px solid #eee;
-                padding-bottom:10px;
-            }
-            .example-box {
-                background-color: #fffdf0;
-                border-left:5px solid #f0e68c;
-                padding:20px;
-                margin: 20px 0;
-            }
-            code, pre {
-                font-family:'Courier New', Courier, monospace;
-                background-color:#f4f4f4;
-                padding:2px 5px;
-                border-radius: 3px;
-            }
-            pre {
-                display:block;
-                padding:15px;
-                overflow-x: auto;
-                background-color:#ffffff;
-                border:1px solid #ddd;
-                margin:10px 0;
-            }
-            .highlight {
-                font-weight:bold;
-                color:#d11141;
-            }
-        </style>
-    </head>
-    <body>
-        <h2>5. Groups of selectors</h2>
-        <p>A comma-separated list of selectors represents the union of all elements selected by each of the individual selectors in the list. 
-        (A comma is <span class="highlight">U+002C</span>.) For example, in CSS when several selectors share the same declarations, 
-        they may be grouped into a comma-separated list. White space may appear before and/or after the comma.</p>
-    <div class = "example-box">
-        <p><strong>CSS example:</strong></p>
-        <p>In this example, we condense three rules with identical declarations into one. Thus,</p>
-        <pre>
-            h1 { font-family: sans-serif }
-            h2 { font-family: sans-serif }
-            h3 { font-family: sans-serif }</pre>
-        <p>is equivalent to:</p>
-        <pre>
-            h1, h2, h3 { font-family: sans-serif }</pre>
-    </div>
-    </body>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0" />
+    <link href="Bai 3.css" rel="stylesheet" />
+  </head>
+  <body>
+    <section class="dich-vu">
+      <h2 class="tieude">Dịch vụ</h2>
+      <p>Khám và tư vấn răng miệng tổng quát</p>
+      <div class="danh-sach">
+        <p><u>Trồng răng Implant</u></p>
+        <p><b>Niềng răng thẩm mỹ</b></p>
+        <p>Tẩy trắng răng</p>
+        <p>Điều trị viêm lợi, chảy máu chân răng</p>
+      </div>
+    </section>
+  </body>
 </html>

@@ -1,0 +1,13 @@
+.gioithieu {
+  background-color: #f4f4f9;
+  padding: 30px;
+  text-align: center;
+  line-height: 1.6;
+}
+.tieude {
+  color: #1e90ff;
+}
+.intro-list {
+  display: inline-block;
+  text-align: left;
+}

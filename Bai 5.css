@@ -1,0 +1,38 @@
+.feedback-container {
+  text-align: center;
+  padding: 40px;
+  font-family: Arial, sans-serif;
+}
+.form-title {
+  color: #1e90ff;
+  margin-bottom: 25px;
+}
+.field {
+  margin-bottom: 15px;
+}
+.field label {
+  display: block;
+  margin-bottom: 5px;
+}
+input,
+textarea {
+  width: 350px;
+  padding: 10px;
+  border: 1px solid #1e90ff;
+  border-radius: 4px;
+  outline: none;
+}
+.btn-send {
+  background-color: #00bfff;
+  color: white;
+  border: none;
+  padding: 10px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.btn-send:hover {
+  opacity: 0.9;
+}
