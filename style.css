@@ -1,88 +1,68 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
+/* Universal selector */
+*{
+ margin: 0   
 }
-body {
-  background-color: #f0f9ff;
-  color: #0f172a;
-  line-height: 1.6;
+
+/* id selector */
+#h2--id{
+    color: purple;
 }
-#clinic-header {
-  background-color: #0284c7;
-  color: white;
-  text-align: center;
-  padding: 2rem 1rem;
+
+/* class selector */
+.text-yellow{
+    color: yellow;
 }
-#clinic-header h1 {
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  margin-bottom: 0.5rem;
+.bg-blue{
+    background-color: orange;
 }
-.slogan {
-  font-style: italic;
-  opacity: 0.9;
+
+/* element selector*/
+table,
+td{
+    border: 5px solid dashed #ff0101;
+    border-collapse: collapse;
+    width: 500px;
+    height: 50px;
 }
-section {
-  max-width: 800px;
-  margin: 20px auto;
-  padding: 0 20px;
+
+/* attribute selector */
+[href] {
+    color: blue;
 }
-h2 {
-  color: #0369a1;
-  text-transform: capitalize;
-  margin-top: 20px;
-  margin-bottom: 10px;
+
+/* pesudo-class selector */
+td :hover {
+    background-color: aqua;
 }
-h2 + p {
-  color: #334155;
-  line-height: 1.4;
+td:active{
+    font-size: 100px
 }
-.philosophy em {
-  font-style: italic;
-  color: #0ea5e9;
-  font-weight: bold;
+table :nth-child(1){ /*tập con thứ bao nhiêu có thể là 1,2,3 hoặc lẻ, chẵn*/
+    background-color: yellow;
 }
-.services ul {
-  list-style: none;
-  margin-top: 10px;
+/* selector combinator */
+#outer-div p .innerclass a b {
+    background-color: pink;
 }
-.services li {
-  padding: 5px 0;
-  transition: color 0.3s ease;
-  cursor: pointer;
+#outer-div p{
+    background-color: pink;
 }
-.services li::before {
-  content: "🦷 ";
+
+
+/*bộ thuộc tính font*/
+p {
+    font-size: ;/*cỡ font*/
+    font-weight: ;/*độ đậm nhạt*/
+    font-family; ;/*font chữ trên máy*/
 }
-.services li:hover {
-  color: #0284c7;
+
+/*bột thuộc tính text*/
+p {
+    text-align: ;
+    letter-spacing: ;
+    word-spacing: ;
+    line-height: ;
 }
-.warning {
-  color: #b91c1c;
-  font-style: italic;
-  margin-top: 10px;
-}
-.contact a {
-  display: inline-block;
-  margin-top: 10px;
-  color: #1d4ed8;
-  text-decoration: none;
-}
-a[target="_blank"] {
-  text-decoration: underline;
-  font-weight: bold;
-}
-.contact a:hover {
-  color: #0c4a6e;
-}
-.footer {
-  text-align: center;
-  color: #fff;
-  font-size: 24px;
-  font-weight: 900;
-  background-color: #0284c7;
-  padding: 20px 0;
-  margin-top: 40px;
-}
+
+
+/*độ ưu tiên của inline css là lớn nhất*/
